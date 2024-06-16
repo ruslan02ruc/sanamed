@@ -1,0 +1,88 @@
+@import '../../variables.scss';
+
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  gap: $n-24;
+  font-size: 1.6rem;
+
+  &__top {
+    display: flex;
+    gap: $n-24;
+  }
+
+  &--col {
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+  }
+
+  &--card {
+    & img {
+      width: 160px;
+      height: 160px;
+    }
+
+    &__wrapper {
+      display: flex;
+      gap: $n-24;
+    }
+  }
+
+  &__top &--card { 
+    padding: $n-24;
+    // height: 336px;
+    background: #f2f4f8;
+  }
+
+  &__top &--insurance {
+    padding: $n-24;
+    // height: 336px;
+    background: #f2f4f8;
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+
+    &__wrapper {
+      display: flex;
+      gap: $n-24;
+    }
+  }
+
+  &--contacts {
+    background: #f2f4f8;
+    padding: $n-24;
+
+    & ul {
+      padding-top: $n-24;
+      font-size: 1.6rem;
+      line-height: 2;
+      color: #697077;
+    }
+  }
+
+  &--title {
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #001D6C;
+  }
+
+  &--text {
+    color: #697077;
+    & span {
+      color: #21272a;
+    }
+  }
+
+  &--btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: $n-24;
+
+    &>button {
+      width: 150px;
+    }
+  }
+}

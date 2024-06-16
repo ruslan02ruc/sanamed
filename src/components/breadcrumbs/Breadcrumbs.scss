@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.breadcrumbs {
+  display: flex;
+  gap: $n-24;
+  height: 48px;
+
+  &--back {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #21272a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: url("/icon/arrow-up-2-light.svg");
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #697077;
+    display: flex;
+    align-items: center;
+
+    & + & {
+      &::before {
+        content: url("/icon/arrow-up-2-light-1.svg");
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 0 4px;
+      }
+    }
+  }
+}

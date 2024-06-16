@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'TTNorms';
+  src: local("TTNormsMedium"), url("../fonts/TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *::before,*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  background: #FFFFFF;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}

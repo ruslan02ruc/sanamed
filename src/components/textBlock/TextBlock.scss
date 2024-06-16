@@ -1,0 +1,16 @@
+.text-block {
+  &--title {
+    font-size: 1.6rem;
+    color: #697077;
+    padding-bottom: 8px;
+  }
+
+  &--text {
+    font-size: 1.6rem;
+    color: #21272a;
+
+    li + li {
+      padding-top: 8px;
+    }
+  }
+}

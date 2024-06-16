@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+    font-size: 1.6rem;
+    background: #f2f4f8;
+    padding: $n-24;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--title {
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #001D6C;
+  }
+
+  &--btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+
+    &:hover {
+      background: #c1c7cd;
+      border-radius: 10px;
+    }
+    
+    &.open {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__content {
+    display: none;
+    flex-direction: column;
+    gap: $n-24;
+
+    &.open {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import '../../variables.scss';
+
+.doctor-profile {
+  display: flex;
+  gap: $n-24;
+  padding: $n-24;
+  font-size: 1.6rem;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    gap: $n-24;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+  }
+
+  &__right {
+    
+  }
+
+  &__mini-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &--block-vert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--col {
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+  }
+
+  &--card {
+    &>img {
+      width: 160px;
+      height: 160px;
+    }
+
+    &__wrapper {
+      display: flex;
+      gap: $n-24;
+    }
+
+    &.mini {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__top &--card { 
+    padding: $n-24;
+    background: #f2f4f8;
+  }
+
+  &--title {
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #001D6C;
+  }
+
+  &--gray-text {
+    color: #697077;
+  }
+
+  &--title-blue {
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #001D6C;
+  }
+
+  &--btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: $n-24;
+
+    &>button {
+      width: 150px;
+    }
+  }
+}

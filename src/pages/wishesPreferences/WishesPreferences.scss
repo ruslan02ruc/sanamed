@@ -1,0 +1,79 @@
+@import '../../variables.scss';
+
+.wishes-preferences {
+  display: flex;
+  flex-direction: column;
+  gap: $n-24;
+
+  &--input-block {
+    background: #f2f4f8;
+    padding: $n-24;
+    
+    & label {
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+
+      & input {
+        margin-top: 8px;
+        border: none;
+        padding: 12px 16px;
+        font-size: 1.6rem;
+        color: #697077;
+      }
+    }
+  }
+
+  &--btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $n-24;
+    
+    & button {
+      width: 150px;
+    }
+  }
+
+  &--title {
+    font-size: 1.4rem;
+    padding-bottom: 8px;
+  }
+
+  &--message {
+    &-text {
+      padding: 12px 16px;
+      background: #FFFFFF;
+      font-size: 1.6rem;
+    }
+  }
+
+  &--response {
+    &-text {
+      padding: 12px 16px;
+      background: #FFFFFF;
+      font-size: 1.6rem;
+      color: #697077;
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 8px;
+
+      & img {
+        padding: 12px;
+      }
+
+      & p:nth-of-type(1) {
+        font-weight: 500;
+        line-height: 1.1;
+      }
+
+      & p:nth-of-type(2) {
+        font-size: 1.2rem;
+        color: #697077;
+      }
+    }
+  }
+}

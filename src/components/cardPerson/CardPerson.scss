@@ -1,0 +1,124 @@
+@import '../../variables.scss';
+
+.card-person {
+  &.primary {
+    max-width: 916px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    color: #697077;
+    background: #FFFFFF;
+    padding: $n-24;
+    justify-content: space-between;
+    gap: 40px;
+    z-index: 1;
+  
+    .card-person {
+      &__left {
+        max-width: 286px;
+        display: flex;
+        flex-direction: column;
+        gap: $n-24;
+    
+        img {
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      
+      &__right {
+        max-width: 542px;
+        display: flex;
+        flex-direction: column;
+        gap: $n-24;
+    
+        div p:last-child {
+          padding-top: 8px;
+          color: #21272a;
+        }
+    
+        .button-blue {
+          width: 200px;
+          align-self: flex-end;
+        }
+      }
+    
+      &-list {
+        li {
+          color: #21272a;
+        }
+      }
+    
+      &--doctor {
+        font-weight: 500;
+      
+        span {
+          color: #001D6C;
+        }
+      }
+    }
+  }
+
+  &.secondary {
+    max-width: 750px;
+    font-size: 1.3rem;
+    background: #f2f4f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #697077;
+    justify-content: space-between;
+    gap: 32px;
+
+    .card-person {
+      &__left {
+        max-width: 234px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    
+        img {
+          width: 100%;
+          height: 290px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      
+      &__right {
+        max-width: 444px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    
+        div p:last-child {
+          padding-top: 7px;
+          color: #21272a;
+        }
+    
+        .button-blue {
+          font-size: 1.3rem;
+          width: 165px;
+          height: 39px;
+          align-self: flex-end;
+        }
+      }
+    
+      &-list {
+        li {
+          color: #21272a;
+        }
+      }
+    
+      &--doctor {
+        font-weight: 500;
+      
+        span {
+          color: #001D6C;
+        }
+      }
+    }
+  }
+}

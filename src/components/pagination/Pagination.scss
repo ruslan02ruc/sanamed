@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+
+.pagination {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #697077;
+  display: flex;
+  justify-content: center;
+  padding-top: $n-24;
+
+  &--previous {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 16px;
+    height: 40px;
+    cursor: pointer;
+
+    & img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 40px;
+    color: #21272a;
+    cursor: pointer;
+  }
+
+  &--next {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #21272a;
+    padding-left: 16px;
+    height: 40px;
+    cursor: pointer;
+
+    & img {
+      transform: rotate(180deg);
+    }
+  }
+}

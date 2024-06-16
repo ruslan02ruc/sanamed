@@ -1,0 +1,79 @@
+.content-register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+
+  &__left {
+    background: #DDE1E6;
+  }
+  
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    background: #FFFFFF;
+    padding: 0 80px;
+  }
+  
+  &--title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.1;
+    margin: 0;
+  }
+  
+  &--form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    & label {
+      & span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  &--line {
+    border: 1px solid #dde1e6;
+  }
+
+  &--register {
+    font-size: 1.4rem;
+    color: #697077;
+  }
+
+  &--login {
+    font-size: 1.6rem;
+    color: #697077;
+  }
+
+  &--span-pass {
+    font-size: 1.2rem;
+    color: #697077;
+  }
+
+  &--checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input[type="checkbox"] {
+      width: 17px;
+      height: 17px;
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  
+  a {
+    color: #001D6C;
+    font-size: 1.4rem;
+  }
+}
+

@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+.calendar-wrapper {
+  &__top {
+    display: flex;
+    flex-direction: row;
+    gap: $n-24;
+    padding-bottom: $n-24;
+  }
+
+  .calendar-form {
+    font-weight: 500;
+    font-size: 1.6rem;
+
+    &--title {
+      color: #001D6C;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--btn {
+      & > button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+
+        &:first-child {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    
+    &--info {
+      & table {
+        width: 400px;
+        height: 325px;
+        & tr {
+          text-align: center;
+          & td {
+            cursor: pointer;
+
+            &.active {
+              color: #fff;
+              background: #001D6C;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        & thead {
+          color: #001D6C;
+        }
+          
+        & tbody {
+          color: #697077;
+        }
+      }
+    }
+  }
+}
+

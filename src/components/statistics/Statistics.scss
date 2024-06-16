@@ -1,0 +1,17 @@
+.statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+
+  & div { 
+    outline:  1px solid;
+  }
+
+  & .rows-2 {
+    grid-row: span 2;
+  } 
+  
+  & .colum-2 {
+    grid-column: span 2;
+  }
+}

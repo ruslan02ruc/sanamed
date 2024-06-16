@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.history-visits {
+  &--list {
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+  }
+}

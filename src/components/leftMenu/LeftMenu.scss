@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.left-menu {
+  background-color: #FFFFFF;
+  padding: $n-24 16px;
+  border-left: 1px solid #dde1e6;
+  border-right: 1px solid #dde1e6;
+
+  & .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 16px;
+
+    img {
+      width: 56px;
+      height: auto;
+    }
+  
+    span {
+      font-family: 'Mondo', sans-serif;
+    }
+  }
+
+  &__nav {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+
+    &--item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 8px;
+      border: 1px solid #f2f4f8;
+      padding: 12px 8px;
+      height: 48px;
+
+      & a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      & img {
+        width: 24px;
+        height: 24px;
+      }
+
+      &.logout {
+        background: transparent;
+        border: none;
+      }
+
+      &.active {
+        background: #F2F4F8;
+      }
+    }
+  }
+}

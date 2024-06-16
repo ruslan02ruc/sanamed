@@ -1,0 +1,36 @@
+.notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  &--wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    padding: 24px;
+    background: #b2ffbe;
+    width: max-content;
+
+    & > p {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25) !important;
+    z-index: 1;
+  }
+}
+

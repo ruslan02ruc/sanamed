@@ -1,0 +1,89 @@
+@import '../../variables.scss';
+
+.settings {
+  font-size: 1.4rem;
+
+  &--btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $n-24;
+
+    &>button {
+      width: 150px;
+    }
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    gap: $n-24;
+
+    &.active {
+      display: flex;
+    }
+
+    &.passive {
+      display: none;
+    }
+  }
+  
+  &--label-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  & input {
+    border: none;
+    padding: 12px 16px;
+    background: #f2f4f8;
+    font-size: 1.6rem;
+    line-height: 1.4;
+
+    &[type=password]::placeholder {
+      letter-spacing: 0.75em;
+    }
+  }
+
+  &--label-select {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & select {
+      border: none;
+      padding: 12px 16px;
+      background: #f2f4f8;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      
+      &::marker {
+        color: red;
+      }
+    }
+  }
+
+  &--label-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &>div {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      
+      & label {
+        display: flex;
+        align-items: center;
+      }
+
+      & input {
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        accent-color:#1c1c1c;
+      }
+    }
+  }
+}
